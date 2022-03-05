@@ -1,0 +1,27 @@
+﻿@model FolderDataModel.FolderData
+
+<h4>Create a new folder in your <b>C:\</b> drive directly</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index">
+            
+            <div class="form-group">
+                <label asp-for="dirName" class="control-label">Enter a name to your new folder : </label>
+                <input asp-for="dirName" class="form-control" />           
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Submit" onclick="MessageInfo()" class="btn btn-outline-success" />
+            </div>
+            <script type="text/javascript">
+                function MessageInfo(){
+                    alert ('Folder has been created successfully')
+                }
+             </script>
+        </form>
+    </div>
+</div>
+
+
+
